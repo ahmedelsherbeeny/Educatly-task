@@ -2,16 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layouts/layout/layout.component';
 
-const routes: Routes = [
-  {path:"",component:LayoutComponent,
-  loadChildren:()=> import ("./pages/pages.module").then((m)=>m.PagesModule)
-
-  },
-
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

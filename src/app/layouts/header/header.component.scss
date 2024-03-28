@@ -1,58 +1,102 @@
-.header-content{
-    height: 204px;
+.header-content {
+  height: 438px;
+  width: 100%;
+  background: hsl(264, 100%, 98%);
+  padding-top: 50px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    clip-path: polygon(-31% 79%, 104% -256%, 116% 37%, 14% 124%);
+    background: hsl(264, 100%, 98%);
     width: 100%;
-    background: transparent;
-    padding-top: 50px;
-    @media (min-width: 1200px) { /* Medium and small screens */
-        padding-top: 90px;
+    bottom: -347px;
+    height: 80%;
+    @media (max-width: 1200px) {
+      clip-path: polygon(-32% 78%, 104% -256%, 116% 37%, 14% 124%);
 
+      bottom: -279px;
+      height: 95%;
+    }
+    @media (max-width: 815px) {
+      bottom: -363px;
+      height: 125%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    /* Medium and small screens */
+    padding-top: 90px;
+  }
+
+  @media (max-width: 1199.98px) {
+    /* Medium and small screens */
+    height: 295px; /* Set height to 295px on medium and small screens */
+  }
+  .big-title {
+    h2 {
+      color: #42307d;
+      font: inter;
+      letter-spacing: -2;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 60px;
+      @media (max-width: 1199.98px) {
+        /* Medium and small screens */
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+      }
+    }
+  }
+  .titles {
+    .t1 {
+      display: block; // Default display setting for t1
+      color: #6941c6;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      @media (max-width: 767px) {
+        display: none; // Hide t1 on mobile screens
+      }
     }
 
-    @media (max-width: 1199.98px) { /* Medium and small screens */
-            height: 295px; /* Set height to 295px on medium and small screens */
-        
-    }
-    .big-title{
-        h2{
-    
-            color: #42307D;
-            font: inter;
-            letter-spacing: -2;
-            font-weight: 600;
-            font-size: 48px;
-            line-height: 60px;
-            @media (max-width: 1199.98px) { /* Medium and small screens */
-                font-weight: 600;
-                font-size: 36px;
-                line-height: 44px;
-            }
-    
-            
-        }
-    }
-    .titles{
-        .t2{
-            @media (min-width: 768px) { 
-                display: none;
-            
-        }
-        .t1{
-            @media (max-width: 768px) { 
-                display: none;
-            
-        }
+    .t2 {
+      display: none; // Default display setting for t2
+      color: #6941c6;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
 
-        }
-
-        }
+      @media (max-width: 767px) {
+        display: block; // Show t2 only on mobile screens
+      }
     }
+  }
+  .smal-text {
+    color: #6941c6;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    @media (max-width: 767px) {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  .search-input {
+    position: relative;
+    input {
+      width: 320px;
+      height: 31px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+      border: none;
+      background-image: url("../../../assets/images/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg"); // Path to your search icon image
+      background-repeat: no-repeat;
+      background-position: 10px center; // Adjust position of the icon
+      background-size: 20px 20px; // Adjust size of the icon
+      outline: none;
+      padding-left: 30px;
+    }
+  }
 }
-
-
-
-
-
-
-
-
-

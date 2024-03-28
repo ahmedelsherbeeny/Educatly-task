@@ -1,0 +1,47 @@
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 40px;
+  height: 100%;
+
+  .box {
+    width: 384px;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: left;
+    height: 580px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+
+    .image-holder {
+      position: relative;
+      overflow: hidden;
+      img {
+        height: 240px;
+        padding: 4px;
+        border-radius: 5px;
+      }
+    }
+
+    .content-container {
+      .category {
+        color: #6941c6;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .title-desc {
+        .title-text {
+          p {
+            font-size: 12px;
+            line-height: 32px;
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
