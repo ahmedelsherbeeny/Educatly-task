@@ -1,0 +1,28 @@
+.content{
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    position: relative;
+    background-color: #fbf8f8;
+    ;
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: -2;
+        background: linear-gradient(to bottom, #afaca7, #cdd5d7, #d4dfd4); 
+        padding: 20px;
+        margin-top: -20px; /* Pull the clipped area up to overlap with the content area */
+        z-index: 1; /* Ensure the clipped area stays on top */
+        width: 100%;
+        height: 30%;
+        top: 170px;
+        clip-path: polygon(0% 65%, 100% -2%, 100% 56%, -1% 91%);
+        opacity: 0.5;
+
+
+        
+
+    }
+}

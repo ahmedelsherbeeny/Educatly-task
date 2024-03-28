@@ -1,0 +1,58 @@
+.header-content{
+    height: 204px;
+    width: 100%;
+    background: transparent;
+    padding-top: 50px;
+    @media (min-width: 1200px) { /* Medium and small screens */
+        padding-top: 90px;
+
+    }
+
+    @media (max-width: 1199.98px) { /* Medium and small screens */
+            height: 295px; /* Set height to 295px on medium and small screens */
+        
+    }
+    .big-title{
+        h2{
+    
+            color: #42307D;
+            font: inter;
+            letter-spacing: -2;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 60px;
+            @media (max-width: 1199.98px) { /* Medium and small screens */
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 44px;
+            }
+    
+            
+        }
+    }
+    .titles{
+        .t2{
+            @media (min-width: 768px) { 
+                display: none;
+            
+        }
+        .t1{
+            @media (max-width: 768px) { 
+                display: none;
+            
+        }
+
+        }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
