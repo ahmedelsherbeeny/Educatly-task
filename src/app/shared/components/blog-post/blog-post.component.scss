@@ -1,0 +1,96 @@
+
+  
+  
+    .box {
+      width: 384px;
+      border-radius: 8px;
+      justify-content: center;
+      text-align: left;
+      height: 580px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  
+      .image-holder {
+        display: flex;
+        justify-content: center;
+        padding: 7px;
+        width: 100%;
+        img {
+          height: 240px;
+          padding: 4px;
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+  
+      .content-container {
+        height: 315px;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+              .category {
+          color: #6941c6;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .title-desc {
+          display: flex;
+      flex-direction: column;
+      gap: 16px;
+      height: 195px;
+          .title-text {
+            height: auto;
+            p {
+              font-size: 12px;
+              line-height: 32px;
+              font-size: 24px;
+              font-weight: 600;
+              height: 64px;
+            }
+          }
+          .desc{
+            p{
+              line-height: 24px;
+              font-size: 16px;
+              font-weight: 400;
+              color: #667085;
+  
+            }
+          }
+        }
+        .profile {
+          text-align: center;
+          display: flex;
+          gap: 15px;
+          .profile-photo {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 2.8rem;
+            height: 2.8rem;
+            img{
+              width: 100%;
+              display: block;
+              height: 100%;
+              border-radius: 7px;
+            }
+          }
+          .info{
+            display: flex;
+      flex-direction: column;
+            p{
+              font-size: 500;
+  
+            }
+            small{
+              line-height: 20px;
+              font-size: 14px;
+              font-weight: 400;
+              color: #667085;
+            }
+          }
+        }
+      }
+    }
+  
+  

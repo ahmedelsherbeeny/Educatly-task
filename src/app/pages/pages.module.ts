@@ -3,17 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { BlogPostsComponent } from './components/blog-posts/blog-posts.component';
-import { BlogPostDetailsComponent } from './components/blog-post-details/blog-post-details.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
     BlogPostsComponent,
-    BlogPostDetailsComponent
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    SharedModule,
+
   ]
 })
 export class PagesModule { }

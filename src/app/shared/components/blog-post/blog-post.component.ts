@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { BlogPost } from 'src/app/models/blogPosts';
 
 @Component({
   selector: 'app-blog-post',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-post.component.scss']
 })
 export class BlogPostComponent {
+
+  @Input() data!:BlogPost
+
+  
+  postDetails(url:string){
+    
+    window.open(url, '_blank');
+  }
 
 }
