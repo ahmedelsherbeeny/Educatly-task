@@ -17,7 +17,8 @@ This is my Angular project. To run it locally, follow these steps:
 
 
 
-To access the deployed version of the project on GitHub Pages, visit:
+To access the deployed version of the project on GitHub Pages, visit: https://ahmedelsherbeeny.github.io/Educatly-task/
+
 
 
 
